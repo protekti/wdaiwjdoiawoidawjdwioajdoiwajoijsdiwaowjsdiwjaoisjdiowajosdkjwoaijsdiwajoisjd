@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Lushcave Tech | Transaction Completed</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+svg {
+  display: block;
+  height: 10vw;
+  width: 10vw;
+  color: #3686ec; /* SVG path use currentColor to inherit this */
+}
+
+.circle {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  animation: draw 1s forwards;
+}
+
+.tick {
+  stroke-dasharray: 18;
+  stroke-dashoffset: 18;
+  animation: draw 1s forwards 1s;
+}
+
+@keyframes draw { 
+  to { stroke-dashoffset: 0 } 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fade-in { animation: fadeIn 3s; }
+.fade-in2 { animation: fadeIn 5s; }
+h2{
+    top: 48%;
+    left: 38%;
+    position: absolute;
+    font-size: 2vw;
+    color: rgb(255, 255, 255)
+}
+h3{
+    top: 58%;
+    left: 35%;
+    position: absolute;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255)
+}
+.container {
+    top: 20%;
+    left: 44%;
+    position: absolute;
+}
+body {
+background-color: #000000;
+}
+</style>
+<body>
+    <div class="container">
+        <svg viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              <path class="circle" d="M13 1C6.372583 1 1 6.372583 1 13s5.372583 12 12 12 12-5.372583 12-12S19.627417 1 13 1z"/>
+              <path class="tick" d="M6.5 13.5L10 17 l8.808621-8.308621"/>
+            </g>
+        </svg>
+    </div>
+    <h2 class="fade-in" style="font-family: 'Montserrat'"><b>Transaction Complete!</b></h2>
+    <h3 class="fade-in2" style="font-family: 'Montserrat'"><b>Thank you for choosing Lushcave Tech.</b></h3>
+</body>
+
+<script>
+    setTimeout(function () {
+        window.location.href = "index.html";
+    }, 7000);
+</script>
+
+</html>

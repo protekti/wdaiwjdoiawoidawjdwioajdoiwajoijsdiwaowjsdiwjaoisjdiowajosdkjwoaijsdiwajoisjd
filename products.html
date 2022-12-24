@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Lushcave Tech | Products</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+h2{
+    top: 0%;
+    left: 40%;
+    position: absolute;
+    font-size: 4vw;
+    color: rgb(255, 255, 255)
+}
+h3{
+    top: 25%;
+    left: 31%;
+    position: absolute;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255)
+}
+body {
+background-color: #000000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b1b1b1;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.card {
+  box-shadow: 0 0px 10px 0 #b1b1b1;
+  width: 10%;
+  top: 20%;
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  font-family: arial;
+  background-color: #b1b1b1;
+  font-family: 'Montserrat';
+  font-weight:800;
+}
+
+.price {
+  color: rgb(0, 0, 0);
+  font-size: 1vw;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+p{
+  font-size: 1vw;
+}
+h1{
+  font-size: 1.5vw;
+}
+</style>
+<body>
+    <div class="sidenav">
+        <a href="index.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;"><strong>Home</strong></a> 
+        <a href="products.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Products</a> 
+        <a href="https://discord.gg/ugtH3RdKMU" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Discord</a>
+    </div>
+    <h2 style="font-family: 'Montserrat'"><b>Products</b></h2>
+    <div class="card">
+      <img src="Previews/ChristmasPackSnow.png" alt="Failed To Load" style="width:100%">
+      <h1>Christmas Pack</h1>
+      <p class="price">$0.93</p>
+      <p>Presents, Snowman, Fireplace, Sleds</p>
+      <p><button onclick="christmasPack()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+    <div class="card" style="left: 33%;">
+      <img src="Previews/SCI Preview.png" alt="Failed To Load" style="width:100%">
+      <h1>Self Check In</h1>
+      <p class="price">$0.93</p>
+      <p>Non Functioning SCI</p>
+      <p><button onclick="SCI()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+    <div class="card" style="left: 46%;">
+      <img src="Previews/servingsystem.png" alt="Failed To Load" style="width:100%">
+      <h1>Serving System</h1>
+      <p class="price">$0.93</p>
+      <p>Fully working Serving System</p>
+      <p><button onclick="SS()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+    <div class="card" style="left: 59%;">
+      <img src="Previews/CheckInStandsV3.png" alt="Failed To Load" style="width:100%">
+      <h1>Check In Stands V3</h1>
+      <p class="price">$0.62</p>
+      <p>Perfect for your very own airport!</p>
+      <p><button onclick="CIS3()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+    <div class="card" style="left: 72%;">
+      <img src="Previews/Ticket Scanner.png" alt="Failed To Load" style="width:100%">
+      <h1>Ticket Scanner</h1>
+      <p class="price">$0.66</p>
+      <p>Functioning Ticket Scanner developed by protekti#3422!</p>
+      <p><button onclick="TS()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+    <div class="card" style="left: 85%;">
+      <img src="Previews/SuitCase.jpg" alt="Failed To Load" style="width:100%">
+      <h1>Suitcase</h1>
+      <p class="price">$0.18</p>
+      <p>A high quality suitcase that comes as a tool, and is equipable!</p>
+      <p><button onclick="S()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+    <div class="card" style="top: 90%;">
+      <img src="Previews/SecurityScanner.png" alt="Failed To Load" style="width:100%">
+      <h1>Security Scanner</h1>
+      <p class="price">$0.25</p>
+      <p>Security Scanner to keep your passengers safe!</p>
+      <p><button onclick="SSE()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+    <div class="card" style="top: 90%; left: 33%">
+      <img src="Previews/MilitaryBarack.png" alt="Failed To Load" style="width:100%">
+      <h1>Military Barack</h1>
+      <p class="price">$0.50</p>
+      <p>Lushcave Tech's first military asset!</p>
+      <p><button onclick="MB()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
+    </div>
+</body>
+<script>
+    //https://discord.com/api/webhooks/1055896710607552583/RbRbODE0D0A9pQ94cf-4iaeHZrax5QkG-CnlBZtaZ5zLZDUKvkPIln5Dnxtk2_UOpnZx
+    function christmasPack(){
+      window.location.href = "ChristmasPack.html";
+    }
+    function SCI(){
+      window.location.href = "SCI.html";
+    }
+    function SS(){
+      window.location.href = "SS.html";
+    }
+    function CIS3(){
+      window.location.href = "CIS3.html";
+    }
+    function TS(){
+      window.location.href = "TS.html";
+    }
+    function S(){
+      window.location.href = "S.html";
+    }
+    function SSE(){
+      window.location.href = "SSE.html";
+    }
+    function MB(){
+      window.location.href = "MB.html";
+    }
+</script>
+</html>
