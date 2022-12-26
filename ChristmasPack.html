@@ -7,6 +7,14 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
             <title>Lushcave Tech | Christmas Pack</title>
+            <link rel="icon" href="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png">
+            <meta name="description" content="The official website of Lushcave Tech!">
+            <meta content="Lushcave Tech" property="og:title" />
+            <meta content="The official website of Lushcave Tech!" property="og:description" />
+            <meta content="http://lushcave.tech/" property="og:url" />
+            <meta content="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png" property="og:image" />
+            <meta content="#000000" data-react-helmet="true" name="theme-color"/>
+            
         </head>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
@@ -247,19 +255,18 @@
                 document.getElementById("loader").style.display = "none";
                 document.getElementById("Everything").style.display = "block";
             }
-            async function sendContact(name, surname) {
+            async function sendContact(name) {
 
                 const webhookBody = {
                 embeds: [{
                     title: 'Christmas Pack Purchased',
                     fields: [
-                    { name: 'Name', value: name },
-                    { name: 'Surname', value: surname }
+                    { name: 'Email', value: name },
                     ]
                 }],
                 };
 
-                const webhookUrl = 'https://discord.com/api/webhooks/1055896710607552583/RbRbODE0D0A9pQ94cf-4iaeHZrax5QkG-CnlBZtaZ5zLZDUKvkPIln5Dnxtk2_UOpnZx';
+                const webhookUrl = 'https://discord.com/api/webhooks/1056973786479607848/NNZ0Vrg1gtlQkDax3_Ccoxd-1d9f5nIIAAVuIPcnllcoW9xQrhF3tM1EstKPhe9VcwcB';
 
                 const response = await fetch(webhookUrl, {
                 method: 'POST',
@@ -305,10 +312,10 @@
                         const payerName = details.payer.name.given_name;
                         const payerSurName = details.payer.name.surname;
                         console.log('Transaction completed');
-                        sendContact(payerName, payerSurName)
+                        sendContact(details.payer.email_address)
                         setTimeout(function () {
                             window.location.href = "TransactionComplete.html";
-                        }, 2000);
+                        }, 1000);
                     };
 
                     return actions.order.capture().then(captureOrderHandler);
