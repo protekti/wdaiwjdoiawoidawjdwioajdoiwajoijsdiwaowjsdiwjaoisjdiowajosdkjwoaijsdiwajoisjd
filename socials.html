@@ -134,7 +134,7 @@ img{
 
     <h3 style="font-family: 'Montserrat'; left: 46%" id="Text"><b>Main Server</b></h3>
     <p id="rcorners2"></p>
-    <h1 style="font-family: 'Montserrat'; top: 32%; left:42.9%; color: rgb(0, 0, 0);" id="MEMBERCOUNT"><b>Members Online: N/A</b></h12>
+    <h1 style="font-family: 'Montserrat'; top: 32%; left:42.9%; color: rgb(0, 0, 0);" id=""><b></b></h12>
     <h1 style="font-family: 'Montserrat'; top: 40%; left:42.5%; font-size: 1vw; color: rgb(0, 0, 0);"><b>This is the official Lushcave Tech<br>discord. As of now you<br>can join <a href="https://discord.gg/ugtH3RdKMU" style="color:#000000;">the server.</a></b></h12>
     <img src="Images/NoBGBlack.png" style="top: 290%">
 
@@ -159,22 +159,6 @@ img{
             StaffSupportCount.innerHTML = "Staff Online: " + String(data.members.length-5) + "/23"
         } else {
             console.log(`Error: ${xhr.status}`);
-        }
-        };
-    //Normal Server
-        var MemberCount = document.getElementById("MEMBERCOUNT")
-        const xhr2 = new XMLHttpRequest();
-        xhr2.open("GET", "https://discord.com/api/guilds/939006346974597210/widget.json");
-        xhr2.send();
-        xhr2.responseType = "json";
-        xhr2.onload = () => {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            var data = xhr2.response;
-            console.log(data)
-            console.log(data.members.length-5)
-            MemberCount.innerHTML = "Members Online: " + String(data.members.length)
-        } else {
-            console.log(`Error: ${xhr2.status}`);
         }
         };
 </script>
