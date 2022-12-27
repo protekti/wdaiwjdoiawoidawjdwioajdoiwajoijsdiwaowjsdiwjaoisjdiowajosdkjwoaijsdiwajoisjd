@@ -1,0 +1,31 @@
+<html>
+<body>
+    <br><br>
+    <label>encrypted</label>
+    <div id="demo1"></div>
+    <br>
+    
+    <label>decrypted</label>
+    <div id="demo2"></div>
+    
+    <br>
+    <label>Actual Message</label>
+    <div id="demo3"></div>
+
+<script type="text/javascript">
+    var decodedStringBtoA = 'YUhSMGNITTZMeTlrYVhOamIzSmtMbU52YlM5aGNHa3ZkMlZpYUc5dmEzTXZNVEExTmprNU1EVXlPRFV4TXpjNU1ERXdOQzgxY1RaVlZVbGtRa0pZVXpWNlVXZG5jVEp6WDJGdlZGOVpUVmd3TjNkMGRVeGxTSFJsY1hVdE5FaFpPRUV6WW1sc04yNHdNVUZDVVVsbVlXdDZkRTQyWm1veExRPT0=';
+
+    // Encode the String
+    var encodedStringBtoA = btoa(decodedStringBtoA);
+    var decodedStringAtoB = atob(encodedStringBtoA);
+    var decodedStringAtob2 = atob(decodedStringAtoB);
+    var decodedStringAtob3 = atob(decodedStringAtob2);
+
+
+    console.log(encodedStringBtoA);
+    console.log(decodedStringAtoB); //aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTAyODU2Nzc3Mzg5NjUwNzM5Mi9EaThXRWVKeWoxOUNQN0lNNmo1d2RnZUp0cTloLWVFX1VIUXk4OFZfaTJ1U1RwTTRmQWZiWExNMEJTR1FNNFczX0x1OA==
+    console.log(decodedStringAtob2);
+    console.log(decodedStringAtob3);
+</script>
+</body>
+</html>
