@@ -110,8 +110,56 @@ p{
 h1{
   font-size: 1.5vw;
 }
+
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 110%; /* Full width */
+  height: 150%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 <body>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" style="left: 30%;">
+      <span class="close">&times;</span>
+      <center><h1 style="font-family: 'Montserrat'; font-weight:800; color:rgb(255,0,0)">Warning!</h1></center>
+      <center><p style="font-family: 'Montserrat'; font-weight:800;">When a product is purhcased you can get it by joining the <a href="https://discord.gg/ugtH3RdKMU">discord server</a>. Then DM <code>Lushcave Help Desk#2785</code> and select the category <code>Product Redeem</code></p></center>
+    </div>
+  
+  </div>
     <div class="sidenav">
       <a href="index.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;"><strong>Home</strong></a> 
       <a href="assets.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Assets</a> 
@@ -201,6 +249,13 @@ h1{
     </div>
 </body>
 <script>
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
     //https://discord.com/api/webhooks/1055896710607552583/RbRbODE0D0A9pQ94cf-4iaeHZrax5QkG-CnlBZtaZ5zLZDUKvkPIln5Dnxtk2_UOpnZx
     function christmasPack(){
       window.location.href = "Christmas Pack.html";
