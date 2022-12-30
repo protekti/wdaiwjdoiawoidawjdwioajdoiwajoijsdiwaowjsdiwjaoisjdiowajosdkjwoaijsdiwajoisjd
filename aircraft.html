@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Lushcave Tech | Aircraft</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png">
+    <meta name="description" content="The official website of Lushcave Tech!">
+    <meta content="Lushcave Tech | Aircraft" property="og:title" />
+    <meta content="The official website of Lushcave Tech!" property="og:description" />
+    <meta content="http://lushcave.tech/aircraft" property="og:url" />
+    <meta content="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color"/>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+h2{
+    top: 0%;
+    left: 47%;
+    position: absolute;
+    font-size: 4vw;
+    color: rgb(255, 255, 255)
+}
+h3{
+    top: 25%;
+    left: 31%;
+    position: absolute;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255)
+}
+body {
+background-color: #000000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b1b1b1;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.card {
+  box-shadow: 0 0px 10px 0 #b1b1b1;
+  width: 10%;
+  height: 66.7%;
+  top: 20%;
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  font-family: arial;
+  background-color: #b1b1b1;
+  font-family: 'Montserrat';
+  font-weight:800;
+}
+
+.price {
+  color: rgb(0, 0, 0);
+  font-size: 1vw;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1vw;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+p{
+  font-size: 1vw;
+}
+h1{
+  font-size: 1.5vw;
+}
+.copyright{
+  font-family: 'Montserrat';
+  font-size: 0.75vw;
+  position: absolute;
+  bottom: 1%;
+  left: 45%;
+  color: white;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 5%;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 150%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<body>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" style="left: 30%;">
+      <span class="close">&times;</span>
+      <center><h1 style="font-family: 'Montserrat'; font-weight:800; color:rgb(255,0,0)">Warning!</h1></center>
+      <center><p style="font-family: 'Montserrat'; font-weight:800;">When a product is purhcased you can get it by joining the <a href="https://discord.gg/ugtH3RdKMU">discord server</a>. Then DM <code>Lushcave Help Desk#2785</code> and select the category <code>Product Redeem</code></p></center>
+    </div>
+  
+  </div>
+    <div class="sidenav">
+      <a href="index.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;"><strong>Home</strong></a> 
+      <a href="assets.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Assets</a>
+      <a href="aircraft.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Aircraft</a>  
+      <a href="Donate.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Donate</a>
+      <a href="socials.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Socials</a> 
+    </div>
+    
+    <h2 style="font-family: 'Montserrat'"><b>Aircraft</b></h2>
+    
+    <div class="card">
+      <img src="Images/BestSeller.png" style="width:70%; position:absolute; right: 60%; bottom: 85%;">
+      <img src="Previews/CJ4.png" alt="Failed To Load" style="width:100%">
+      <h1>Cessna Citation Cj4</h1>
+      <p class="price">$4.37</p>
+      <p>Mesh and Animated Cessna Citation Cj4.</p>
+      <p><button onclick="ComingSoon()" style="font-family: 'Montserrat'; font-weight:800;">Coming Soon!</button></p>
+    </div>
+
+    <div class="card" style="left: 33%;">
+      <img src="Previews/Q400.png" alt="Failed To Load" style="width:100%">
+      <h1>Bombardier Q400</h1>
+      <p class="price">$3.75</p>
+      <p>Mesh and Animated Bombardier Q400.</p>
+      <p><button onclick="ComingSoon()" style="font-family: 'Montserrat'; font-weight:800;">Coming Soon!<br></button></p>
+    </div>
+
+    <div class="card" style="left: 46%;">
+      <img src="Images/New.png" style="width:45%; position:absolute; right: 70%; bottom: 90%;">
+      <img src="Previews/A220.png" alt="Failed To Load" style="width:100%">
+      <h1>Airbus A220</h1>
+      <p class="price">$5.00</p>
+      <p>Mesh and Animated Airbus A220.<br>&nbsp</p>
+      <p><button onclick="ComingSoon()" style="font-family: 'Montserrat'; font-weight:800;">Coming Soon!<br></button></p>
+    </div>
+
+    <div class="card" style="left: 59%;">
+      <img src="Images/New.png" style="width:45%; position:absolute; right: 70%; bottom: 90%;">
+
+      <img src="Previews/Q100.png" alt="Failed To Load" style="width:100%">
+      <h1>Bombardier Q100</h1>
+      <p class="price">$3.12</p>
+      <p>Mesh and Animated Bombardier Q100.</p>
+      <p><button onclick="ComingSoon()" style="font-family: 'Montserrat'; font-weight:800;">Coming Soon!<br></button></p>
+    </div>
+    <center><div id="copyright" class="copyright">&copy; 2022 - 2022 lushcave.tech</div></center>
+    <script>
+    (function(){
+      let cpr = document.getElementById("copyright");
+      cpr.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" lushcave.tech - All Rights Reserved.";
+      cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+    })();
+    </script>
+</body>
+<script>
+    //https://discord.com/api/webhooks/1055896710607552583/RbRbODE0D0A9pQ94cf-4iaeHZrax5QkG-CnlBZtaZ5zLZDUKvkPIln5Dnxtk2_UOpnZx
+    function ComingSoon(){
+      window.location.href = "Coming Soon.html";
+    }
+</script>
+</html>

@@ -6,12 +6,12 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-            <title>Lushcave Tech | Barrier Gate</title>
+            <title>Lushcave Tech | Donate</title>
             <link rel="icon" href="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png">
             <meta name="description" content="The official website of Lushcave Tech!">
-            <meta content="Lushcave Tech | Barrier Gate" property="og:title" />
+            <meta content="Lushcave Tech | Donate" property="og:title" />
             <meta content="The official website of Lushcave Tech!" property="og:description" />
-            <meta content="http://lushcave.tech/Barrier Gate" property="og:url" />
+            <meta content="http://lushcave.tech/Donate" property="og:url" />
             <meta content="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png" property="og:image" />
             <meta content="#000000" data-react-helmet="true" name="theme-color"/>
         </head>
@@ -23,7 +23,7 @@
             }
             .buttons-container {
                 left: 35%;
-                top: 90%;
+                top: 70%;
                 width: 30%;
                 height: auto;
                 position: absolute;
@@ -148,87 +148,96 @@
             }
             h1{
                 top: 5%;
-                left: 39%;
+                left: 40.5%;
                 position: absolute;
                 font-size: 4vw;
                 color: rgb(255, 255, 255)
             }
             h3{
                 top: 20%;
-                left: 30%;
+                left: 33%;
                 position: absolute;
                 font-size: 2vw;
                 color: rgb(255, 255, 255);
             }
+            .sidenav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b1b1b1;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+.copyright{
+  font-family: 'Montserrat';
+  font-size: 0.75vw;
+  position: absolute;
+  bottom: 1%;
+  left: 45%;
+  color: white;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
         </style>
         <body>
             <div class="loader" id="loader" style="display:block;"></div>
             <div id="Everything" style="display:none;">
-                
-                <h1 style="font-family: 'Montserrat'"><b>Barrier Gate</b></h1>
-                <h2 style="font-family: 'Montserrat'"><b>Price: 0.18 USD</b></h2>
-                <h3 style="font-family: 'Montserrat'"><b>A barrier gate for your verry own airport!</b></h3>
-
-                <div class="slideshow-container">
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                      <img src="Images/barriergate.png" style="width:100%">
-                      <div class="text">Suitcase</div>
-                    </div>
-                  
+                <div class="sidenav">
+                    <a href="index.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;"><strong>Home</strong></a> 
+                    <a href="assets.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Assets</a> 
+                    <a href="aircraft.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Aircraft</a>
+                    <a href="Donate.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Donate</a>
+                    <a href="socials.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Socials</a> 
                   </div>
-                  <br>
-                  
-                  <!-- The dots/circles -->
-                  <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>>
-                </div>
+                <h1 style="font-family: 'Montserrat'"><b>Dontaions</b></h1>
+                <label for="quantity" style="color:rgb(255, 255, 255); font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw; position:absolute; top: 50%; left: 30%;"><b>Amount to donate (Min. 1$): </b></label>
+                <input type="number" id="quantity" name="quantity" min="1" style="color:rgb(0, 0, 0); font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw; position:absolute; top: 50%; left: 51%;">
                 <div id="paypal-button-container" class="buttons-container"></div>
             </div>
+            <center><div id="copyright" class="copyright">&copy; 2022 - 2022 lushcave.tech</div></center>
+            <script>
+            (function(){
+              let cpr = document.getElementById("copyright");
+              cpr.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" lushcave.tech - All Rights Reserved.";
+              cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+            })();
+            </script>
         </body>
         <!-- Sample PayPal credentials (client-id) are included -->
         <script src="https://www.paypal.com/sdk/js?client-id=AZUNuvOuhPP5YMaMkObQ9rtLlrHylbw24AS1Py61Vm0L9iwzs-6fdGsONeWtqHqPj6BVYIyHU_I1AFAA&currency=USD&intent=capture&enable-funding=venmo" data-sdk-integration-source="integrationbuilder"></script>
         <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
-            }
+            document.getElementById("quantity").value = 1
             function showPage() {
                 document.getElementById("loader").style.display = "none";
                 document.getElementById("Everything").style.display = "block";
             }
-            async function sendContact(name) {
+            async function sendContact(name, ammount) {
 
                 const webhookBody = {
                 embeds: [{
-                    title: 'Barrier Gate Purchased',
+                    title: `Donated ${ammount}`,
                     fields: [
-                    { name: 'Email', value: name },
+                        { name: 'Email', value: name },
                     ]
                 }],
                 };
@@ -264,7 +273,7 @@
                         purchase_units: [
                             {
                                 amount: {
-                                    value: "0.18"
+                                    value: document.getElementById("quantity").value
                                 }
                             }
                         ]

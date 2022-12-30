@@ -71,7 +71,7 @@ background-color: #000000;
 }
 
 .card {
-  box-shadow: 0 0px 10px 0 #b1b1b1;
+  box-shadow: 0 0px 10px 0 #ffffff;
   width: 10%;
   height: 66.7%;
   top: 20%;
@@ -79,7 +79,7 @@ background-color: #000000;
   left: 20%;
   text-align: center;
   font-family: arial;
-  background-color: #b1b1b1;
+  background-color: #ffffff;
   font-family: 'Montserrat';
   font-weight:800;
 }
@@ -93,8 +93,8 @@ background-color: #000000;
   border: none;
   outline: 0;
   padding: 12px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0, 0.5);
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -116,13 +116,13 @@ h1{
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
-  left: 0;
+  left: 5%;
   top: 0;
-  width: 110%; /* Full width */
+  width: 100%; /* Full width */
   height: 150%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -148,6 +148,14 @@ h1{
   text-decoration: none;
   cursor: pointer;
 }
+.copyright{
+  font-family: 'Montserrat';
+  font-size: 0.75vw;
+  position: absolute;
+  top: 168%;
+  left: 45%;
+  color: white;
+}
 </style>
 <body>
   <div id="myModal" class="modal">
@@ -163,7 +171,8 @@ h1{
     <div class="sidenav">
       <a href="index.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;"><strong>Home</strong></a> 
       <a href="assets.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Assets</a> 
-      <a href="Coming Soon.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Aircraft</a> 
+      <a href="aircraft.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Aircraft</a> 
+      <a href="Donate.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Donate</a>
       <a href="socials.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Socials</a> 
     </div>
     <h2 style="font-family: 'Montserrat'"><b>Assets</b></h2>
@@ -247,6 +256,14 @@ h1{
       <p>A barrier gate for your verry own airport!</p>
       <p><button onclick="BG()" style="font-family: 'Montserrat'; font-weight:800;">See More</button></p>
     </div>
+    <center><div id="copyright" class="copyright">&copy; 2022 - 2022 lushcave.tech</div></center>
+    <script>
+    (function(){
+      let cpr = document.getElementById("copyright");
+      cpr.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" lushcave.tech - All Rights Reserved.";
+      cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+    })();
+    </script>
 </body>
 <script>
     var modal = document.getElementById("myModal");

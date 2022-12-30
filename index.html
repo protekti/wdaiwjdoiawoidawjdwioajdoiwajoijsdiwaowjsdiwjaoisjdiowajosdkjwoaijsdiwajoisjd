@@ -19,12 +19,12 @@
 
 h2{
     top: 5%;
-    left: 40%;
+    left: 45%;
     position: absolute;
     font-size: 4vw;
     color: rgb(255, 255, 255)
 }
-h3{
+.h32{
     top: 25%;
     left: 31%;
     position: absolute;
@@ -69,19 +69,64 @@ background-color: #000000;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.discord-login{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+.discord-profile-picture{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 24%;
+  border-radius: 100%;
+
+}
+.discord-username{
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  width: 3%;
+  font-size: 1vw;
+  color: white;
+  font-family: 'Montserrat'
+}
+.discord-login-square {
+  height: 7%;
+  width: 12%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: #555;
+  border-radius: 3%;
+}
+.copyright{
+  font-family: 'Montserrat';
+  font-size: 0.75vw;
+  position: absolute;
+  bottom: 1%;
+  left: 45%;
+  color: white;
+}
 </style>
 <body>
     <div class="sidenav">
       <a href="index.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;"><strong>Home</strong></a> 
       <a href="assets.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Assets</a> 
-      <a href="Coming Soon.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Aircraft</a>
+      <a href="aircraft.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Aircraft</a>
+      <a href="Donate.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Donate</a>
       <a href="socials.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Socials</a> 
     </div>
 
     <h2 style="font-family: 'Montserrat'"><b>Welcome</b></h2>
-    <h3 style="font-family: 'Montserrat'"><b>The official purchasing website for Lushcave Tech!<br>This website has been created to provide customers<br>with the ability to pay with Credit card or PayPal.</b></h3>
-</body>
-<script>
-    //https://discord.com/api/webhooks/1055896710607552583/RbRbODE0D0A9pQ94cf-4iaeHZrax5QkG-CnlBZtaZ5zLZDUKvkPIln5Dnxtk2_UOpnZx
-</script>
+    <h3 class="h32" style="font-family: 'Montserrat'; left: 40%;"><b>To the official store for Lushcave Tech! This<br>website has been created for Roblox Developers<br>to aquire amazing products.<br>As of now we are mainly selling products for<br>Roblox Aviation groups. We provide many services.<br>More details about products and services can be<br>found in <a href="https://discord.gg/ugtH3RdKMU" style="color:aqua">discord server</a>.</b></h3>
+    <center><div id="copyright" class="copyright">&copy; 2022 - 2022 lushcave.tech</div></center>
+  <script>
+  (function(){
+    let cpr = document.getElementById("copyright");
+    cpr.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" lushcave.tech - All Rights Reserved.";
+    cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+  })();
+  </script>
+  </body>
 </html>
