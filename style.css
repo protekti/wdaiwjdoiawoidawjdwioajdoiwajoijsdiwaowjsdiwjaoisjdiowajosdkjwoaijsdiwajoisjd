@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+}
+
+#top_navigation_bar {
+    top: 0;
+    text-align: center;
+    background: #242526;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: absolute;
+}
+
+#top_navigation_bar_link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#side_product_search_customise_selection_bar {
+    height: 100rem;
+    padding-top: 10%;
+    font-family: 'Poppins', sans-serif;
+    background: #3A3B3C;
+    color: white;
+    width: 15%;
+}
+
+#product_type_selection {
+    padding-left: 25%;
+}
+
+#product_type_label {
+    margin-left: 5%;
+}
+
+.checkmark_content {
+    margin: 5%;
+}
+
+#product_pricing_selection {
+    padding-left: 25%;
+    margin-top: 25%;
+}
+
+#product_pricing_label {
+    margin-left: 5%;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+#product_grid_layout {
+    background-color: rgb(0, 0, 0);
+    margin-top: -97.25rem;
+    height: 100%;
+    width: 85%;
+    float: right;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#product_left {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7.5%;
+    border-radius: 5%;
+    float: left;
+    background: cornflowerblue;
+    width: 22.5%;
+}
+
+#product_center {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7.5%;
+    border-radius: 5%;
+    position: absolute;
+    top: 2.5%;
+    left: 37%;
+    float: right;
+    background: cornflowerblue;
+    width: 22.5%;
+}
+
+#product_right {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7.5%;
+    border-radius: 5%;
+    position: absolute;
+    top: 2.5%;
+    left: 65%;
+    float: right;
+    background: cornflowerblue;
+    width: 20%;
+}
+
+#aircraft {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7.5%;
+    border-radius: 5%;
+    position: absolute;
+    top: 2.5%;
+    left: 65%;
+    float: right;
+    background: cornflowerblue;
+    width: 20%;
+}
+
+#asset {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7.5%;
+    border-radius: 5%;
+    position: absolute;
+    top: 2.5%;
+    left: 65%;
+    float: right;
+    background: cornflowerblue;
+    width: 20%;
+}
+
+#airport {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7.5%;
+    border-radius: 5%;
+    position: absolute;
+    top: 2.5%;
+    left: 65%;
+    float: right;
+    background: rgb(105, 237, 100);
+    width: 20%;
+}
+
+
+#vehicle {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 7.5%;
+    border-radius: 5%;
+    position: absolute;
+    top: 2.5%;
+    left: 65%;
+    float: right;
+    background: rgb(237, 100, 100);
+    width: 20%;
+}
+
+#product_placeholder {
+    width: 75%;
+    border-radius: 5%;
+}
+
+.buy-now-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-now-button:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }

@@ -1,132 +1,19 @@
-<html>
-<!-- V0.7A -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <title>Lushcave Tech | Home</title>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png">
-    <meta name="description" content="The official website of Lushcave Tech!">
-    <meta content="Lushcave Tech" property="og:title" />
-    <meta content="The official website of Lushcave Tech!" property="og:description" />
-    <meta content="http://lushcave.tech/" property="og:url" />
-    <meta content="https://cdn.discordapp.com/attachments/784309662681399337/1056971856273494068/Logo___kopia-removebg-preview_2.png" property="og:image" />
-    <meta content="#000000" data-react-helmet="true" name="theme-color"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Lushcave Tech</title>
 </head>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
-h2{
-    top: 5%;
-    left: 45%;
-    position: absolute;
-    font-size: 4vw;
-    color: rgb(255, 255, 255)
-}
-.h32{
-    top: 25%;
-    left: 31%;
-    position: absolute;
-    font-size: 1.5vw;
-    color: rgb(255, 255, 255)
-}
-body {
-background-color: #000000;
-}
-
-.sidenav {
-  height: 100%;
-  width: 10%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #b1b1b1;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #ffffff;
-}
-
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-.discord-login{
-  position: absolute;
-  top: 80%;
-  left: 50%;
-}
-.discord-profile-picture{
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 24%;
-  border-radius: 100%;
-
-}
-.discord-username{
-  position: absolute;
-  top: -20%;
-  left: 50%;
-  width: 3%;
-  font-size: 1vw;
-  color: white;
-  font-family: 'Montserrat'
-}
-.discord-login-square {
-  height: 7%;
-  width: 12%;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  background-color: #555;
-  border-radius: 3%;
-}
-.copyright{
-  font-family: 'Montserrat';
-  font-size: 0.75vw;
-  position: absolute;
-  bottom: 1%;
-  left: 45%;
-  color: white;
-}
-</style>
 <body>
-    <div class="sidenav">
-      <a href="index.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;"><strong>Home</strong></a> 
-      <a href="assets.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Assets</a> 
-      <a href="aircraft.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Aircraft</a>
-      <a href="Donate.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Donate</a>
-      <a href="socials.html" style="font-family: 'Montserrat'; font-weight:800; font-size: 1.5vw;">Socials</a> 
-    </div>
-
-    <h2 style="font-family: 'Montserrat'"><b>Welcome</b></h2>
-    <h3 class="h32" style="font-family: 'Montserrat'; left: 40%;"><b>To the official store for Lushcave Tech! This<br>website has been created for Roblox Developers<br>to aquire amazing products.<br>As of now we are mainly selling products for<br>Roblox Aviation groups. We provide many services.<br>More details about products and services can be<br>found in <a href="https://discord.gg/ugtH3RdKMU" style="color:aqua">discord server</a>.</b></h3>
-    <center><div id="copyright" class="copyright">&copy; 2022 - 2022 lushcave.tech</div></center>
-  <script>
-  (function(){
-    let cpr = document.getElementById("copyright");
-    cpr.innerHTML = "&copy; 2022 - "+new Date().getFullYear()+" lushcave.tech - All Rights Reserved.";
-    cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
-  })();
-  </script>
-  </body>
+    <nav id="top_navigation_bar">
+        <a href="" id="top_navigation_bar_link">Home</a>
+        <a href="./shop.html" id="top_navigation_bar_link">Shop</a>
+        <a href="./faq.html" id="top_navigation_bar_link">FAQ</a>
+    </nav>
+    <center><h1 style="position: absolute;top:20%; color:white; left:33%; font-size: 5vw;">Lushcave Tech</h1></center>
+    <center><h3 style="font-family: 'Arial'; position: absolute;left: 32.5%; top: 40%; color:white; font-size: 1.5vw;"><b>To the official store for Lushcave Tech! This<br>website has been created for Roblox Developers<br>to aquire amazing products.<br>As of now we are mainly selling products for<br>Roblox Aviation groups. We provide many services.<br>More details about products and services can be<br>found in the <a href="https://discord.gg/ugtH3RdKMU" style="color:aqua">discord server</a>.</b></h3></center>
+</body>
 </html>
